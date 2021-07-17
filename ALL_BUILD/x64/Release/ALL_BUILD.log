@@ -1,0 +1,10 @@
+﻿  console_control.cpp
+  game2d.cpp
+  game_ui.cpp
+  main.cpp
+  正在生成代码
+  0 of 704 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  ALL_BUILD.vcxproj -> C:\Users\Kaisa\source\repos\C++\Breakout\x64\Release\Breakout\Breakout.exe

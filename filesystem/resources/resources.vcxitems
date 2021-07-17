@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{4ce316a1-4f72-4faa-bf95-9cd2fe3695cd}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)textures\awesomeface.png" />
+    <Image Include="$(MSBuildThisFileDirectory)textures\container.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)shaders\post_processing.fs" />
+    <None Include="$(MSBuildThisFileDirectory)shaders\post_processing.vs" />
+    <None Include="$(MSBuildThisFileDirectory)textures\shaders\particle.fs" />
+    <None Include="$(MSBuildThisFileDirectory)textures\shaders\particle.vs" />
+    <None Include="$(MSBuildThisFileDirectory)textures\shaders\sprite.fs" />
+    <None Include="$(MSBuildThisFileDirectory)textures\shaders\sprite.vs" />
+  </ItemGroup>
+</Project>
